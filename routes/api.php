@@ -16,3 +16,13 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::apiResource('/projects', 'ProjectController');
+Route::prefix('/projects/{cliente_id}')->group(function(){
+  Route::apiResource('/tasks', 'TaskController');
+});
+Route::middleware('auth:api')->group(function(){
+
+});
+
+
