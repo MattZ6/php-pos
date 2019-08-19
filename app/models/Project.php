@@ -6,11 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Project extends Model
 {
+
+
   protected $fillable = [
-      'name', 'description',
+    'name', 'description'
   ];
 
-  public function tasks(){
-    return $this->hasMany('App\Task');
+  public function tasks()
+  {
+    return $this->hasMany(Task::class);
   }
 }
