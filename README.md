@@ -16,6 +16,13 @@ Após isso, terá uma pasta chamada `php-pos` no diretório atual. Adentre a mes
 - `cp .env.example .env`;
 - `php artisan key:generate`;
 - Dentro do diretório `~/app/database/`, crie o arquivo `database.sqlite`;
-- Novamente no diretório na pasta raiz do projeto, execute `php artisan migrate`.
+- Novamente no diretório na pasta raiz do projeto, execute `php artisan migrate`;
+- `npm i`.
 
-Após isso, o projeto já estará em condições de ser executado: `php artisan serve`.
+Após isso, o projeto já estará em condições de ser executado: `npm run watch` & `php artisan serve`.
+
+### Finalização
+
+**Pós-graduandos**
+- Daniel Stocki
+- Matheus Felipe Zanin
